@@ -1,0 +1,51 @@
+.VideoFooter{
+    position: relative;
+    bottom: 120px;
+    color: white;
+    margin-left: 40px;
+    display: flex;
+}
+.videoDesc>h3{
+    padding-bottom: 10px;
+}
+.videoDesc>p{
+    padding-bottom: 20px;
+}
+.spinner{
+    position: absolute;
+    bottom: 0;
+    right:20px;
+    animation: spin  infinite 2s linear;
+}
+.videofootTicker{
+    display: flex;
+    overflow-x: hidden;
+    /* border: 2px solid red; */
+}
+.videofootTicker>p{
+    text-align: center;
+    margin-left: 10px;
+    animation: leftRight 5s infinite;
+}
+@keyframes leftRight {
+    0%{
+        margin-left: 0px;
+        opacity: 1;
+    }
+    50%{
+        margin-left: 80px;
+        opacity: -1;
+    }
+    100%{
+        margin-left: 0px;
+        opacity: 1;
+    }
+}
+@keyframes spin {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
